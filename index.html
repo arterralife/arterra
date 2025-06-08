@@ -2,213 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Arterra - The Art of Terra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arterra</title>
   <style>
-    /* Font dan Reset */
     body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background: white;
-      color: #222;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      background-color: #ffffff;
+      color: #111111;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0 30px;
+      padding: 40px 20px;
     }
 
     header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 20px 0;
-      border-bottom: 1px solid #eee;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
     }
 
-    /* Logo kiri dan tengah */
-    .logo-left, .logo-center {
+    header img {
       height: 40px;
     }
-    .logo-center {
-      margin: 0 auto;
-      flex-grow: 1;
-      text-align: center;
-    }
 
-    /* Menu kanan menggantikan search */
-    nav.menu {
-      display: flex;
-      gap: 20px;
-      font-weight: 600;
-      font-size: 16px;
-      text-transform: uppercase;
-    }
-
-    nav.menu a {
-      color: #222;
-      text-decoration: none;
-      cursor: pointer;
-      transition: color 0.3s;
-    }
-    nav.menu a:hover {
-      color: #0077cc;
-    }
-
-    /* About Section */
     .about {
-      margin: 50px 0;
       display: flex;
       gap: 40px;
-      flex-wrap: wrap;
+      margin-top: 60px;
     }
 
-    .about-text {
-      flex: 1 1 300px;
-      font-size: 16px;
-      color: #444;
-    }
-    .about-text p + p {
-      margin-top: 20px;
+    .about p {
+      line-height: 1.6;
+      flex: 1;
     }
 
-    /* Latest Articles */
-    .latest-articles {
-      margin: 50px 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-
-    .article {
-      /* polos, no border, no box */
-      /* hanya spasi dan teks */
-    }
-
-    .article img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .article-title {
-      font-weight: 700;
-      font-size: 18px;
-      margin-bottom: 6px;
-    }
-
-    .article-excerpt {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 4px;
-      max-height: 3em; /* kira-kira 2 baris */
-      overflow: hidden;
-    }
-
-    .article-segment {
-      font-size: 12px;
-      font-weight: 600;
-      color: #999;
-      text-transform: uppercase;
-    }
-
-    /* Footer */
     footer {
-      border-top: 1px solid #eee;
-      padding: 30px 0;
+      margin-top: 80px;
+      padding: 40px 20px;
+      background-color: #f7f7f7;
       text-align: center;
       font-size: 14px;
-      color: #777;
+      color: #666;
     }
 
     footer a {
-      color: #0077cc;
+      color: #666;
       text-decoration: none;
-      margin: 0 8px;
-    }
-
-    footer .quote {
-      margin-top: 15px;
-      font-style: italic;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .about {
-        flex-direction: column;
-      }
-
-      nav.menu {
-        font-size: 14px;
-        gap: 12px;
-      }
-
-      .latest-articles {
-        grid-template-columns: 1fr;
-      }
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="logo-left.png" alt="Logo Left" class="logo-left" />
-      <div class="logo-center">
-        <img src="logo-center.png" alt="Logo Center" />
-      </div>
-      <nav class="menu">
-        <a href="#lesson">Lesson</a>
-        <a href="#essence">Essence</a>
-        <a href="#echoes">Echoes</a>
-      </nav>
-    </header>
 
+  <header>
+    <img src="logo-left.png" alt="Logo Kiri" />
+    <img src="logo-right.png" alt="Logo Kanan" />
+  </header>
+
+  <main class="container">
     <section class="about">
-      <div class="about-text">
-        <p>Arterra is a digital media platform devoted to reconnecting humanity with nature, culture, and art. Through meaningful stories and authentic experiences, we foster awareness, appreciation, and love for everything that exists, without chasing profit or metrics.</p>
+      <p>
+        Arterra is a digital media platform devoted to reconnecting humanity with nature, culture, and art. Through meaningful stories and authentic experiences, we foster awareness, appreciation, and love for everything that exists, without chasing profit or metrics.
+      </p>
+      <p>
+        Our mission is to create lasting impact by awakening consciousness about the need to protect and value life on Earth. We aim to inspire real action, one that brings harmony between humanity, nature, culture, and art, for a sustainable present and future.
 
-        <p>Our mission is to create lasting impact by awakening consciousness about the need to protect and value life on Earth. We aim to inspire real action, one that brings harmony between humanity, nature, culture, and art, for a sustainable present and future.</p>
-
-        <p>Welcome to Arterra — The Art of Terra.</p>
-      </div>
+        <br><br>
+        <strong>Welcome to Arterra — The Art of Terra.</strong>
+      </p>
     </section>
+  </main>
 
-    <section class="latest-articles">
-      <article class="article">
-        <img src="article1.jpg" alt="Article 1" />
-        <div class="article-title">Title Article 1</div>
-        <div class="article-excerpt">This is a short excerpt from article 1, showing only two lines for preview purposes.</div>
-        <div class="article-segment">Lesson</div>
-      </article>
-      <article class="article">
-        <img src="article2.jpg" alt="Article 2" />
-        <div class="article-title">Title Article 2</div>
-        <div class="article-excerpt">This is a short excerpt from article 2, showing only two lines for preview purposes.</div>
-        <div class="article-segment">Essence</div>
-      </article>
-      <article class="article">
-        <img src="article3.jpg" alt="Article 3" />
-        <div class="article-title">Title Article 3</div>
-        <div class="article-excerpt">This is a short excerpt from article 3, showing only two lines for preview purposes.</div>
-        <div class="article-segment">Echoes</div>
-      </article>
-      <article class="article">
-        <img src="article4.jpg" alt="Article 4" />
-        <div class="article-title">Title Article 4</div>
-        <div class="article-excerpt">This is a short excerpt from article 4, showing only two lines for preview purposes.</div>
-        <div class="article-segment">Lesson</div>
-      </article>
-    </section>
+  <footer>
+    <p>
+      Follow us: 
+      <a href="https://instagram.com/youraccount" target="_blank">Instagram</a> |
+      <a href="mailto:hello@arterra.com">Email</a>
+    </p>
+    <p>
+      “Let art remind us that the Earth is alive.”
+    </p>
+  </footer>
 
-    <footer>
-      <a href="https://instagram.com/arterra" target="_blank">Instagram</a> |
-      <a href="mailto:contact@arterra.com">Email</a>
-      <div class="quote">"Art and nature are the breath of life."</div>
-    </footer>
-  </div>
 </body>
 </html>
